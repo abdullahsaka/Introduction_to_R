@@ -1,0 +1,53 @@
+## Working Directory
+getwd()
+## Setting working directory
+setwd("C:/Users/Administrator/Documents")
+## Data Sets existing in base R installation
+## Iris data
+data(iris)
+class(iris)
+str(iris)
+summary(iris)
+dim(iris)
+names(iris)
+ncol(iris)
+nrow(iris)
+head(iris)
+tail(iris)
+iris[1:5,]
+iris[1:10,2]
+iris[1:10,"Sepal.Width"]
+iris$Sepal.Width
+summary(iris$Sepal.Length)
+mean(iris$Sepal.Length)
+median(iris$Sepal.Length)
+range(iris$Sepal.Length)
+var(iris$Sepal.Length)
+sd(iris$Sepal.Length)
+quantile(iris$Sepal.Length)
+quantile(iris$Sepal.Length,c(0.1,0.4,0.7))
+a=c(1,3,5)
+a
+class(a)
+b=c("Ali","Veli","Selami")
+b
+class(b)
+c=c(1L,2L,3L)
+c
+class(c)
+d=c(TRUE,FALSE,TRUE)
+d
+class(d)
+print(a)
+hist(iris$Sepal.Length)
+plot(density(iris$Sepal.Length))
+table(iris$Species)
+pie(table(iris$Species))
+barplot(table(iris$Species))
+cov(iris$Sepal.Length,iris$Petal.Length)
+cov(iris[,1:4])
+cor(iris$Sepal.Length,iris$Petal.Length)
+cor(iris[,1:4])
+aggregate(Sepal.Length~Species,summary,data=iris)
+boxplot(Sepal.Length~Species,data=iris)
+pairs(iris)
