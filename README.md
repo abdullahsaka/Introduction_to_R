@@ -1,4 +1,4 @@
-# Introduction to R - Beginner Study
+## Bootcamp
 
 I created this repository for data scientist candidates who want to implement basic algorithms in R Studio.
 
